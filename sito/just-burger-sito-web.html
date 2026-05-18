@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just Burger · Gruppo Sito Web — Piano di Lavoro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --yellow: #F5C842;
+      --yellow-light: #FDF5D3;
+      --yellow-dark: #B8940F;
+      --black: #111111;
+      --pink: #E8187A;
+      --pink-light: #FDE8F2;
+      --white: #FFFFFF;
+      --gray-bg: #F7F6F2;
+      --gray-border: #E4E2D9;
+      --gray-text: #6B6860;
+      --text: #1A1A1A;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --blue: #1565C0;
+      --blue-light: #E3F2FD;
+      --green: #2E7D32;
+      --green-light: #E8F5E9;
+      --orange: #E65100;
+      --orange-light: #FFF3E0;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--gray-bg); color: var(--text); font-size: 15px; line-height: 1.7; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--black); display: flex; align-items: center; gap: 1.5rem;
+      padding: 0 2rem; height: 54px;
+    }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--yellow); letter-spacing: 2px; flex-shrink: 0; }
+    .nav-logo span { color: #fff; }
+    .nav-links { display: flex; gap: 4px; list-style: none; overflow-x: auto; scrollbar-width: none; }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a {
+      display: block; padding: 5px 12px; border-radius: 6px;
+      color: rgba(255,255,255,0.55); text-decoration: none;
+      font-size: 12px; font-weight: 700; white-space: nowrap; letter-spacing: 0.5px;
+      transition: color .15s, background .15s;
+    }
+    .nav-links a:hover { color: var(--yellow); background: rgba(245,200,66,0.1); }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 5rem; display: flex; flex-direction: column; gap: 2rem; }
+
+    /* HERO */
+    .hero { background: var(--black); border-radius: var(--radius); padding: 2rem; display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: center; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(232,24,122,0.15); border: 1px solid rgba(232,24,122,0.3); color: #F06CA8; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 0.75rem; }
+    .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: 42px; color: #fff; letter-spacing: 2px; line-height: 1; margin-bottom: 0.4rem; }
+    .hero h1 span { color: var(--yellow); }
+    .hero-sub { color: rgba(255,255,255,0.45); font-size: 13px; font-weight: 600; }
+    .hero-stats { display: flex; flex-direction: column; gap: 8px; }
+    .stat-box { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-sm); padding: 10px 16px; text-align: center; min-width: 90px; }
+    .stat-box strong { display: block; font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--yellow); letter-spacing: 1px; line-height: 1; }
+    .stat-box span { color: rgba(255,255,255,0.4); font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* SECTION HEADER */
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 1.25rem; }
+    .step-num { font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 2px; color: var(--white); background: var(--yellow-dark); padding: 3px 10px; border-radius: 4px; flex-shrink: 0; }
+    .section-header h2 { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 2px; }
+    .section-header .sdesc { font-size: 12px; color: var(--gray-text); font-weight: 600; margin-left: auto; text-transform: uppercase; letter-spacing: 1px; }
+
+    .card { background: var(--white); border-radius: var(--radius); border: 1px solid var(--gray-border); padding: 1.5rem 1.75rem; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+
+    /* FASE 0 — gruppi */
+    .groups-bar {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      background: var(--white); border: 1px solid var(--gray-border);
+      border-radius: var(--radius); overflow: hidden; margin-bottom: 1rem;
+    }
+    .group-cell { padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 4px; }
+    .group-cell + .group-cell { border-left: 1px solid var(--gray-border); }
+    .group-label { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+    .group-cell.active .group-label { color: var(--yellow-dark); }
+    .group-cell.other .group-label { color: var(--gray-text); }
+    .group-name { font-weight: 700; font-size: 15px; }
+    .group-cell.active .group-name { color: var(--black); }
+    .group-cell.other .group-name { color: var(--gray-text); }
+    .group-members { font-size: 12px; color: var(--gray-text); }
+    .you-badge { display: inline-block; background: var(--yellow); color: var(--black); font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 4px; margin-left: 4px; }
+
+    /* AGENDA COORDINAMENTO */
+    .agenda-item {
+      display: flex; gap: 1rem; align-items: flex-start;
+      background: var(--white); border: 1px solid var(--gray-border);
+      border-radius: var(--radius); padding: 1rem 1.25rem;
+    }
+    .agenda-num {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--black); color: var(--yellow);
+      font-family: 'Bebas Neue', sans-serif; font-size: 16px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .agenda-content h3 { font-weight: 700; font-size: 14px; margin-bottom: 3px; }
+    .agenda-content p { font-size: 13px; color: var(--gray-text); line-height: 1.6; }
+    .agenda-owner {
+      display: flex; gap: 5px; margin-top: 6px; flex-wrap: wrap;
+    }
+    .owner-tag { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; }
+    .ot-all { background: #EEE; color: #555; }
+    .ot-web { background: var(--yellow-light); color: var(--yellow-dark); }
+    .ot-app { background: var(--blue-light); color: var(--blue); }
+    .ot-social { background: var(--pink-light); color: var(--pink); }
+
+    /* SCOPE */
+    .scope-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .scope-card { border-radius: var(--radius); border: 1px solid var(--gray-border); overflow: hidden; }
+    .scope-head { padding: 10px 1.25rem; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .scope-head.in { background: var(--green-light); color: var(--green); }
+    .scope-head.out { background: #FEE2E2; color: #B91C1C; }
+    .scope-head.later { background: var(--orange-light); color: var(--orange); }
+    .scope-items { background: var(--white); padding: 0.75rem 1.25rem; display: flex; flex-direction: column; gap: 0; }
+    .scope-item { display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 1px solid var(--gray-border); color: var(--text); }
+    .scope-item:last-child { border-bottom: none; }
+    .scope-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .dot-in { background: var(--green); }
+    .dot-out { background: #DC2626; }
+    .dot-later { background: var(--orange); }
+
+    /* DIPENDENZE */
+    .dep-card {
+      background: var(--white); border: 1px solid var(--gray-border);
+      border-radius: var(--radius); padding: 1.25rem 1.5rem;
+    }
+    .dep-header { display: flex; align-items: center; gap: 10px; margin-bottom: 0.75rem; }
+    .dep-icon { width: 32px; height: 32px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+    .dep-icon.app { background: var(--blue-light); }
+    .dep-icon.social { background: var(--pink-light); }
+    .dep-header h3 { font-weight: 700; font-size: 14px; }
+    .dep-list { display: flex; flex-direction: column; gap: 6px; }
+    .dep-item { font-size: 13px; color: var(--gray-text); display: flex; gap: 8px; align-items: flex-start; line-height: 1.5; }
+    .dep-item::before { content: '→'; color: var(--yellow-dark); font-weight: 700; flex-shrink: 0; }
+    .dep-warn {
+      background: #FFF3E0; border: 1px solid #FCD34D; border-radius: var(--radius-sm);
+      padding: 0.75rem 1rem; font-size: 13px; color: #92400E; margin-top: 0.75rem;
+      display: flex; gap: 8px; align-items: flex-start;
+    }
+
+    /* ROADMAP */
+    .roadmap { display: flex; flex-direction: column; gap: 0; }
+    .phase { display: grid; grid-template-columns: 110px 1fr; gap: 1.25rem; position: relative; }
+    .phase-left { display: flex; flex-direction: column; align-items: flex-end; padding-top: 4px; }
+    .phase-num { font-family: 'Bebas Neue', sans-serif; font-size: 12px; letter-spacing: 2px; color: var(--gray-text); }
+    .phase-weeks { font-size: 11px; color: var(--gray-text); background: var(--gray-bg); border: 1px solid var(--gray-border); border-radius: 4px; padding: 2px 8px; margin-top: 4px; white-space: nowrap; }
+    .phase-connector { position: absolute; left: 110px; top: 28px; bottom: -1rem; width: 1px; background: var(--gray-border); }
+    .phase:last-child .phase-connector { display: none; }
+    .phase-dot { position: absolute; left: 107px; top: 6px; width: 7px; height: 7px; border-radius: 50%; background: var(--yellow); border: 2px solid var(--yellow-dark); }
+    .phase-content { background: var(--white); border: 1px solid var(--gray-border); border-radius: var(--radius); padding: 1.1rem 1.5rem; margin-bottom: 1rem; }
+    .phase-content h3 { font-weight: 700; font-size: 14px; margin-bottom: 0.6rem; }
+    .phase-tasks { display: flex; flex-direction: column; gap: 5px; }
+    .task { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--gray-text); line-height: 1.5; }
+    .task-dot { width: 14px; height: 14px; border-radius: 4px; border: 2px solid var(--gray-border); flex-shrink: 0; margin-top: 2px; }
+    .task-dot.done { background: var(--yellow); border-color: var(--yellow-dark); }
+    .collab-note { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-left: 4px; }
+    .cn-app { background: var(--blue-light); color: var(--blue); }
+    .cn-social { background: var(--pink-light); color: var(--pink); }
+    .cn-all { background: #EEE; color: #555; }
+
+    /* DIVISIONE LAVORO */
+    .members-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .member-big { background: var(--white); border: 1px solid var(--gray-border); border-radius: var(--radius); overflow: hidden; }
+    .member-big-head { padding: 1rem 1.5rem; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--gray-border); }
+    .big-avatar { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 18px; flex-shrink: 0; }
+    .av-a { background: var(--yellow); color: var(--black); }
+    .av-b { background: var(--blue-light); color: var(--blue); }
+    .member-big-head h3 { font-weight: 700; font-size: 15px; }
+    .member-big-head .sub { font-size: 12px; color: var(--gray-text); }
+    .member-tasks-list { padding: 1rem 1.5rem; display: flex; flex-direction: column; gap: 6px; }
+    .mtask { font-size: 13px; color: var(--gray-text); display: flex; gap: 8px; align-items: flex-start; line-height: 1.5; }
+    .mtask::before { content: '·'; color: var(--yellow-dark); font-weight: 900; flex-shrink: 0; }
+    .mtask strong { color: var(--text); }
+
+    footer { background: var(--black); color: rgba(255,255,255,0.35); text-align: center; font-size: 12px; padding: 1.5rem; }
+    footer strong { color: var(--yellow); }
+
+    @media (max-width: 680px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 34px; }
+      .groups-bar, .grid2, .scope-grid, .members-grid { grid-template-columns: 1fr; }
+      .group-cell + .group-cell { border-left: none; border-top: 1px solid var(--gray-border); }
+      .grid3 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">JUST <span>BURGER</span> · <span style="color:rgba(255,255,255,0.4);font-size:14px">Gruppo Sito Web</span></div>
+  <ul class="nav-links">
+    <li><a href="#coordinamento">Coordinamento</a></li>
+    <li><a href="#scope">Scope</a></li>
+    <li><a href="#dipendenze">Dipendenze</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#divisione">Divisione Lavoro</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <div class="hero-badge">Generation Italy · Progetto 1 · Sottogruppo</div>
+      <h1>GRUPPO <span>SITO WEB</span></h1>
+      <p class="hero-sub">Piano di lavoro · Coordinamento con App e Social · Roadmap</p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box"><strong>2</strong><span>Persone</span></div>
+      <div class="stat-box"><strong>3</strong><span>Gruppi totali</span></div>
+    </div>
+  </div>
+
+  <!-- FASE 0 — COORDINAMENTO TRA GRUPPI -->
+  <section id="coordinamento">
+    <div class="section-header">
+      <span class="step-num">FASE 0</span>
+      <h2>COORDINAMENTO TRA GRUPPI</h2>
+      <span class="sdesc">Prima di tutto</span>
+    </div>
+
+    <!-- Mappa gruppi -->
+    <div class="groups-bar">
+      <div class="group-cell active">
+        <span class="group-label">Tu sei qui</span>
+        <span class="group-name">🌐 Sito Web</span>
+        <span class="group-members">Andrea <span class="you-badge">tu</span> + 1 compagno</span>
+      </div>
+      <div class="group-cell other">
+        <span class="group-label">Gruppo 2</span>
+        <span class="group-name">📱 App Mobile</span>
+        <span class="group-members">Colleghi del gruppo app</span>
+      </div>
+      <div class="group-cell other">
+        <span class="group-label">Gruppo 3</span>
+        <span class="group-name">📣 Social Media</span>
+        <span class="group-members">Colleghi del gruppo social</span>
+      </div>
+    </div>
+
+    <!-- Agenda riunione iniziale -->
+    <p style="font-size:13px;font-weight:700;color:var(--gray-text);text-transform:uppercase;letter-spacing:1px;margin-bottom:0.75rem">
+      Agenda riunione iniziale — tutti e 3 i gruppi insieme
+    </p>
+    <div style="display:flex;flex-direction:column;gap:0.75rem">
+      <div class="agenda-item">
+        <div class="agenda-num">1</div>
+        <div class="agenda-content">
+          <h3>Fissare la brand identity condivisa</h3>
+          <p>Palette colori esatta, font, tono di voce, stile delle immagini. Deve essere uguale su sito, app e social — altrimenti sembra che lavorino tre aziende diverse.</p>
+          <div class="agenda-owner">
+            <span class="owner-tag ot-all">Tutti e 3 i gruppi</span>
+            <span class="owner-tag ot-web">Proposta iniziale: Sito Web</span>
+          </div>
+        </div>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-num">2</div>
+        <div class="agenda-content">
+          <h3>Definire la struttura del menu/prodotti</h3>
+          <p>Categorie, nomi dei burger, prezzi, foto. Sito e app mostrano gli stessi dati — se li definisce solo un gruppo e l'altro li copia male, i prodotti sono diversi nelle due piattaforme.</p>
+          <div class="agenda-owner">
+            <span class="owner-tag ot-web">Sito Web</span>
+            <span class="owner-tag ot-app">App</span>
+          </div>
+        </div>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-num">3</div>
+        <div class="agenda-content">
+          <h3>Decidere i link reciproci tra le piattaforme</h3>
+          <p>Il sito linka l'Instagram. L'app condivide sui social. I social mandano all'ordine sul sito. Questi rimandi vanno decisi ora, non aggiunti all'ultimo momento.</p>
+          <div class="agenda-owner">
+            <span class="owner-tag ot-all">Tutti e 3 i gruppi</span>
+          </div>
+        </div>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-num">4</div>
+        <div class="agenda-content">
+          <h3>Stabilire chi produce le foto e i testi dei prodotti</h3>
+          <p>Foto e descrizioni degli hamburger servono a tutti e tre. Meglio che le faccia un gruppo solo (Social, che ha il ruolo di contenuti) e le condivida con Sito e App.</p>
+          <div class="agenda-owner">
+            <span class="owner-tag ot-social">Social (produce)</span>
+            <span class="owner-tag ot-web">Sito (riceve)</span>
+            <span class="owner-tag ot-app">App (riceve)</span>
+          </div>
+        </div>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-num">5</div>
+        <div class="agenda-content">
+          <h3>Canale di comunicazione e checkpoint settimanali</h3>
+          <p>Un gruppo WhatsApp o Notion condiviso. Un aggiornamento rapido a metà percorso per sincronizzarsi prima della presentazione finale.</p>
+          <div class="agenda-owner">
+            <span class="owner-tag ot-all">Tutti e 3 i gruppi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCOPE -->
+  <section id="scope">
+    <div class="section-header">
+      <span class="step-num">01</span>
+      <h2>SCOPE DEL SITO WEB</h2>
+      <span class="sdesc">Cosa entra, cosa no</span>
+    </div>
+
+    <p style="font-size:13px;color:var(--gray-text);margin-bottom:1rem">Siete in 2, il tempo è limitato. Meglio fare poche cose bene che tante cose male. Lo scope qui sotto è calibrato su questa realtà.</p>
+
+    <div class="scope-grid">
+      <div class="scope-card">
+        <div class="scope-head in">✓ Dentro — MVP del sito</div>
+        <div class="scope-items">
+          <div class="scope-item"><div class="scope-dot dot-in"></div>Home page con hero e value proposition</div>
+          <div class="scope-item"><div class="scope-dot dot-in"></div>Pagina Menu (catalogo prodotti navigabile)</div>
+          <div class="scope-item"><div class="scope-dot dot-in"></div>Flusso ordine online — carrello e checkout</div>
+          <div class="scope-item"><div class="scope-dot dot-in"></div>Pagina Chi Siamo + filosofia km 0</div>
+          <div class="scope-item"><div class="scope-dot dot-in"></div>Store locator con mappa città attive</div>
+          <div class="scope-item"><div class="scope-dot dot-in"></div>Integrazione feed / link Instagram</div>
+          <div class="scope-item"><div class="scope-dot dot-in"></div>Design responsive mobile-first</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:1rem">
+        <div class="scope-card">
+          <div class="scope-head later">→ Fase 2 — dopo la consegna</div>
+          <div class="scope-items">
+            <div class="scope-item"><div class="scope-dot dot-later"></div>Sistema di autenticazione utenti</div>
+            <div class="scope-item"><div class="scope-dot dot-later"></div>Programma fedeltà e punti</div>
+            <div class="scope-item"><div class="scope-dot dot-later"></div>Tracking ordine in tempo reale</div>
+            <div class="scope-item"><div class="scope-dot dot-later"></div>Pagamenti reali (Stripe, Satispay)</div>
+          </div>
+        </div>
+        <div class="scope-card">
+          <div class="scope-head out">✗ Fuori scope — altri gruppi</div>
+          <div class="scope-items">
+            <div class="scope-item"><div class="scope-dot dot-out"></div>App mobile (→ gruppo App)</div>
+            <div class="scope-item"><div class="scope-dot dot-out"></div>Gestione profilo Instagram (→ gruppo Social)</div>
+            <div class="scope-item"><div class="scope-dot dot-out"></div>Piano editoriale social (→ gruppo Social)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIPENDENZE -->
+  <section id="dipendenze">
+    <div class="section-header">
+      <span class="step-num">02</span>
+      <h2>DIPENDENZE DAGLI ALTRI GRUPPI</h2>
+      <span class="sdesc">Cosa ci serve dagli altri</span>
+    </div>
+
+    <div class="grid2">
+      <div class="dep-card">
+        <div class="dep-header">
+          <div class="dep-icon app">📱</div>
+          <h3>Dal gruppo App</h3>
+        </div>
+        <div class="dep-list">
+          <div class="dep-item">Stessa struttura del menu (categorie, prodotti, prezzi) — deve essere identica su sito e app</div>
+          <div class="dep-item">Conferma delle scelte di brand identity adottate, per mantenere coerenza visiva</div>
+          <div class="dep-item">Eventuale link reciproco: il sito può linkare "Scarica l'app" una volta disponibile</div>
+        </div>
+        <div class="dep-warn">
+          ⚠ Rischio: se App e Sito sviluppano il menu in modo indipendente, i prodotti risultano diversi nelle due piattaforme. Sincronizzarsi subito.
+        </div>
+      </div>
+
+      <div class="dep-card">
+        <div class="dep-header">
+          <div class="dep-icon social">📣</div>
+          <h3>Dal gruppo Social</h3>
+        </div>
+        <div class="dep-list">
+          <div class="dep-item">Nome utente Instagram ufficiale — serve per integrare il feed e i link nel sito</div>
+          <div class="dep-item">Foto dei prodotti in alta qualità — il sito ne ha bisogno per il menu e la home</div>
+          <div class="dep-item">Testi e descrizioni degli hamburger — copywriting coerente col tone of voice</div>
+          <div class="dep-item">Hashtag ufficiali — da inserire nella sezione social del sito</div>
+        </div>
+        <div class="dep-warn">
+          ⚠ Rischio: il gruppo Social è il produttore di contenuti per tutti. Se non consegna le foto in tempo, il sito resta vuoto. Stabilire una scadenza condivisa.
+        </div>
+      </div>
+    </div>
+
+    <!-- Cosa diamo noi agli altri -->
+    <div class="card" style="margin-top:1rem; border-left: 4px solid var(--yellow);">
+      <p style="font-weight:700;font-size:14px;margin-bottom:0.5rem">Cosa il gruppo Sito Web dà agli altri</p>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div class="dep-item">La brand identity definitiva (palette, font) — il sito la definisce per primo, gli altri si allineano</div>
+        <div class="dep-item">L'architettura del menu (categorie e struttura) — usata anche dall'app come riferimento</div>
+        <div class="dep-item">Il link al sito da inserire nel profilo Instagram e nei post del gruppo Social</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap">
+    <div class="section-header">
+      <span class="step-num">03</span>
+      <h2>ROADMAP GRUPPO SITO WEB</h2>
+      <span class="sdesc">2 persone · step by step</span>
+    </div>
+
+    <div class="roadmap">
+
+      <div class="phase">
+        <div class="phase-connector"></div>
+        <div class="phase-dot"></div>
+        <div class="phase-left">
+          <span class="phase-num">FASE 0</span>
+          <span class="phase-weeks">Settimana 1</span>
+        </div>
+        <div class="phase-content">
+          <h3>Riunione con tutti i gruppi <span class="collab-note cn-all">TUTTI</span></h3>
+          <div class="phase-tasks">
+            <div class="task"><div class="task-dot"></div>Definire brand identity condivisa (colori, font, tono)</div>
+            <div class="task"><div class="task-dot"></div>Allinearsi sulla struttura del menu prodotti</div>
+            <div class="task"><div class="task-dot"></div>Stabilire scadenza foto/contenuti dal gruppo Social</div>
+            <div class="task"><div class="task-dot"></div>Aprire canale di comunicazione comune (WhatsApp/Notion)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="phase-connector"></div>
+        <div class="phase-dot"></div>
+        <div class="phase-left">
+          <span class="phase-num">FASE 1</span>
+          <span class="phase-weeks">Settimana 1–2</span>
+        </div>
+        <div class="phase-content">
+          <h3>Pianificazione e wireframe</h3>
+          <div class="phase-tasks">
+            <div class="task"><div class="task-dot"></div>Definire le pagine del sito e la navigazione</div>
+            <div class="task"><div class="task-dot"></div>Wireframe low-fidelity (schema layout di ogni pagina)</div>
+            <div class="task"><div class="task-dot"></div>Validare il wireframe con il resto del gruppo</div>
+            <div class="task"><div class="task-dot"></div>Scegliere lo stack: Next.js + Tailwind + Sanity</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="phase-connector"></div>
+        <div class="phase-dot"></div>
+        <div class="phase-left">
+          <span class="phase-num">FASE 2</span>
+          <span class="phase-weeks">Settimana 2–3</span>
+        </div>
+        <div class="phase-content">
+          <h3>Design e mockup</h3>
+          <div class="phase-tasks">
+            <div class="task"><div class="task-dot"></div>Mockup alta fedeltà delle pagine principali (Home, Menu, Ordine)</div>
+            <div class="task"><div class="task-dot"></div>Definire componenti UI riutilizzabili (card burger, navbar, footer)</div>
+            <div class="task"><div class="task-dot"></div>Condividere mockup col gruppo App <span class="collab-note cn-app">App</span></div>
+            <div class="task"><div class="task-dot"></div>Ricevere prime foto prodotti dal gruppo Social <span class="collab-note cn-social">Social</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="phase-connector"></div>
+        <div class="phase-dot"></div>
+        <div class="phase-left">
+          <span class="phase-num">FASE 3</span>
+          <span class="phase-weeks">Settimana 3–4</span>
+        </div>
+        <div class="phase-content">
+          <h3>Sviluppo frontend</h3>
+          <div class="phase-tasks">
+            <div class="task"><div class="task-dot"></div>Sviluppo pagine in HTML/CSS o componenti React</div>
+            <div class="task"><div class="task-dot"></div>Responsive design — priorità mobile</div>
+            <div class="task"><div class="task-dot"></div>Integrazione contenuti reali (menu, foto, testi)</div>
+            <div class="task"><div class="task-dot"></div>Flusso ordine: selezione prodotti + carrello + checkout (prototipo)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="phase-connector"></div>
+        <div class="phase-dot"></div>
+        <div class="phase-left">
+          <span class="phase-num">FASE 4</span>
+          <span class="phase-weeks">Settimana 4–5</span>
+        </div>
+        <div class="phase-content">
+          <h3>Integrazione e rifinitura</h3>
+          <div class="phase-tasks">
+            <div class="task"><div class="task-dot"></div>Integrazione feed Instagram / link social <span class="collab-note cn-social">Social</span></div>
+            <div class="task"><div class="task-dot"></div>Store locator con Google Maps (città attive + future)</div>
+            <div class="task"><div class="task-dot"></div>Checkpoint con tutti i gruppi — allineamento finale <span class="collab-note cn-all">TUTTI</span></div>
+            <div class="task"><div class="task-dot"></div>Revisione testi e copywriting con il gruppo Social <span class="collab-note cn-social">Social</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="phase-dot"></div>
+        <div class="phase-left">
+          <span class="phase-num">FASE 5</span>
+          <span class="phase-weeks">Settimana 5–6</span>
+        </div>
+        <div class="phase-content">
+          <h3>Testing, deploy e presentazione</h3>
+          <div class="phase-tasks">
+            <div class="task"><div class="task-dot"></div>Test su mobile, tablet e desktop</div>
+            <div class="task"><div class="task-dot"></div>Deploy su Vercel</div>
+            <div class="task"><div class="task-dot"></div>Preparazione slides di presentazione del sito</div>
+            <div class="task"><div class="task-dot"></div>Presentazione finale con tutti e 3 i gruppi <span class="collab-note cn-all">TUTTI</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIVISIONE LAVORO INTERNA -->
+  <section id="divisione">
+    <div class="section-header">
+      <span class="step-num">04</span>
+      <h2>DIVISIONE LAVORO INTERNA</h2>
+      <span class="sdesc">Andrea + compagno</span>
+    </div>
+
+    <p style="font-size:13px;color:var(--gray-text);margin-bottom:1rem">Proposta di divisione basata sulle competenze. Da adattare insieme al tuo compagno nella prima riunione.</p>
+
+    <div class="members-grid">
+      <div class="member-big">
+        <div class="member-big-head">
+          <div class="big-avatar av-a">A</div>
+          <div>
+            <h3>Andrea</h3>
+            <div class="sub">Frontend dev · React · Vercel</div>
+          </div>
+        </div>
+        <div class="member-tasks-list">
+          <div class="mtask"><strong>Wireframe</strong> — struttura pagine e navigazione</div>
+          <div class="mtask"><strong>Sviluppo frontend</strong> — HTML/CSS/JS o React/TypeScript</div>
+          <div class="mtask"><strong>Flusso ordine</strong> — carrello e checkout</div>
+          <div class="mtask"><strong>Deploy su Vercel</strong> — pubblicazione e aggiornamenti</div>
+          <div class="mtask"><strong>Store locator</strong> — integrazione Google Maps</div>
+          <div class="mtask"><strong>Referente tecnico</strong> per gli altri gruppi su integrazioni</div>
+        </div>
+      </div>
+
+      <div class="member-big">
+        <div class="member-big-head">
+          <div class="big-avatar av-b">B</div>
+          <div>
+            <h3>Compagno</h3>
+            <div class="sub">Design · Contenuti · Coordinamento</div>
+          </div>
+        </div>
+        <div class="member-tasks-list">
+          <div class="mtask"><strong>Mockup</strong> — design visivo delle pagine principali</div>
+          <div class="mtask"><strong>Brand identity</strong> — palette, font, stile UI</div>
+          <div class="mtask"><strong>Copywriting</strong> — testi Home, Chi Siamo, menu prodotti</div>
+          <div class="mtask"><strong>Coordinamento</strong> con gruppo Social (foto, contenuti)</div>
+          <div class="mtask"><strong>Coordinamento</strong> con gruppo App (menu, coerenza)</div>
+          <div class="mtask"><strong>Presentazione</strong> — supporto alle slide finali</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--yellow-light);border:1px solid #E8D56A;border-radius:var(--radius-sm);padding:1rem 1.25rem;margin-top:1rem;font-size:13px;color:#7A6200">
+      <strong>Da discutere subito col compagno:</strong> questa è una proposta, non un'assegnazione fissa. Se il tuo compagno ha esperienza di sviluppo, potete condividere il codice. Se ha più esperienza di design, può prendersi tutto il mockup. L'importante è che ognuno sappia esattamente cosa deve consegnare e quando.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <strong>JUST BURGER</strong> · Gruppo Sito Web · Generation Italy 2026
+</footer>
+
+</body>
+</html>
