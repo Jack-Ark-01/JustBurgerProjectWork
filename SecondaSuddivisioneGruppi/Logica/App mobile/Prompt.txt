@@ -1,0 +1,41 @@
+Il nostro progetto è ispirato alle app mobile di McDonald's e Deliveroo.
+
+Abbiamo creato diverse sezioni:
+
+newsletter,
+storia del ristorante,
+prodotti,
+parte delivery,
+info generali.
+
+L’idea è proporre l’app anche su piattaforme di delivery.
+
+La home sarà strutturata come una singola pagina scorrevole.
+
+All’inizio ci sarà la sezione newsletter.
+
+Al centro saranno presenti notizie sul ristorante:
+
+aperture,
+aggiornamenti,
+eventi attuali,
+note e patch.
+
+Più in basso ci saranno approfondimenti e storie:
+
+prodotti,
+ristorante,
+fondatori,
+“reason why” del brand.
+
+La sezione delivery sarà posizionata in basso e potrà anche aprirsi in una pagina separata con animazione top-to-down.
+
+Strategie di marketing:
+
+possibilità di prenotare tavoli direttamente dall’app,
+piatti speciali,
+countdown sponsorizzati su app e social,
+eventi speciali per nuovi panini o prodotti stagionali.
+
+Generalità:
+in base alla posizione del ristorante verranno promossi determinati piatti e prodotti a tema locale.
