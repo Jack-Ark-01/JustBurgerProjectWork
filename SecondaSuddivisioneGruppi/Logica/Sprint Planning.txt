@@ -7,8 +7,8 @@ Logica backload
 
 1	MACRO -> Scrivere struttura diapositive(argomenti, numero diapositive / tempo)
 
-Compiti: 	- Riprendere lo scheletro del PPT che avevamo creato io e matti		
-		- Recuperiamo dalla repo ppt e altri file su struttura concetti ecc...	
+Compiti: 	OK Riprendere lo scheletro del PPT che avevamo creato io e matti		
+		OK Recuperiamo dalla repo ppt e altri file su struttura concetti ecc...	
 		- Riunire tutti i file in una cartella					
 		- Aggiungerli a un file PPT unico					
 		- Scremare diapositive identiche che non aggiungono valore		
