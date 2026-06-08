@@ -9,7 +9,10 @@ Logica backload
 
 Compiti: 	OK Riprendere lo scheletro del PPT che avevamo creato io e 	
 		OK Recuperiamo dalla repo ppt e altri file su struttura concetti ecc...	
-		- Riunire tutti i file in una cartella					
+		OK Riunire tutti i file in una cartella	
+
+		- Scricvere struttura diapositiva (sequenza argomenti)		
+				
 		- Aggiungerli a un file PPT unico					
 		- Scremare diapositive identiche che non aggiungono valore		
 		- Riordinare argomenti con diapositive che aggiungono valori simili e capire quali altri scremare se ce n'e' bisogno e riordinare l'argomento 		  in generale
