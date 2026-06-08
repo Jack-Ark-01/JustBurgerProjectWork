@@ -1,4 +1,4 @@
- 1.Format Video: "Il Cliente inventa, lo Chef approva"
+1.Format Video: "Il Cliente inventa, lo Chef approva"
 L'Idea & Il Ritmo Social
 Il format si basa sul coinvolgimento attivo della community attraverso un montaggio dinamico e serrato, ispirato ai trend di cucina brevi ed d'impatto (stile TikTok/Reels). L'obiettivo è agganciare l'utente nei primi 2 secondi ed evitare che scorra oltre.
 Struttura del Video (Pillola Breve)
@@ -7,12 +7,16 @@ Struttura del Video (Pillola Breve)
 	•	Il Verdetto Onesto: Lo chef assaggia il burger davanti alla telecamera e dà un voto sincero.
 	◦	Se è bocciato: Fa leva sull'ironia e sulla simpatia.
 	◦	Se è promosso: Diventa lo "Special del Mese" nei punti vendita, prendendo il nome dell'utente che lo ha ideato (es. "Il Burger Luca98 da domani è in menu"), scatenando l'hype e la corsa all'assaggio.
+
+
 2. Il "Menu Segreto" (Secret Menu) via Instagram DM
 L'Idea & La Strategia di Lancio
 Creare una parola d'ordine settimanale che dà accesso a un panino speciale non presente nel menu ufficiale, ordinabile solo in cassa o tramite le note delle app di delivery (Just Eat/Deliveroo). Per farlo funzionare, la parola d'ordine va pubblicizzata creando curiosità ed esclusività.
 Piano d'Azione e Contenuti Social
 	•	Il Teaser Video: Si pubblicano video brevi o storie in cui si vede lo chef che assembla un panino esagerato e mai visto prima. Qualcuno fuori campo chiede: "Ma questo cos'è? Non c'è sul menu!". Lo chef fa il segno del silenzio: "Chi sa la parola d'ordine di questa settimana lo sta già mangiando. Chiedicela nei DM".
 	•	Leva della Scarsità: La comunicazione deve spingere sul fatto che gli ingredienti per il panino segreto sono limitati (es. "Solo 20 porzioni disponibili al giorno per punto vendita"), incentivando i clienti a muoversi subito per non rimanere senza.
+
+
  3. Format "La Sfida della Qualità" (Reaction & Km 0)
 L'Idea
 Sfruttare il format delle reaction in split-screen (schermo condiviso) per fare un confronto diretto, onesto e trasparente tra i burger industriali e la filosofia di Just Burger.
@@ -20,6 +24,8 @@ Struttura del Contenuto
 	•	La Reaction: Lo chef (o un creator) reagisce a video virali di burger di grandi catene o fast food che arrivano freddi, palesemente diversi dalle foto pubblicitarie, o visibilmente industriali.
 	•	Il Contrasto Visivo: Subito dopo la reaction, l'inquadratura passa in tempo reale sulla piastra di Just Burger per mostrare lo stesso tipo di panino fatto sul momento.
 	•	Il Messaggio: Il focus non è l'attacco aggressivo, ma il valore della trasparenza: "Loro lo fanno così (prodotto industriale)... Noi lo facciamo espresso, sul momento e con ingredienti a KM Zero". L'occhio del cliente percepisce immediatamente la differenza di qualità.
+
+
  4. Format "Just Burger Anti-Spreco & Solidale"
 L'Idea
 Un format di micro-vlog incentrato sulla Responsabilità Sociale d'Impresa (CSR). L'obiettivo è mostrare l'etica del brand, dimostrando che Just Burger non è solo una catena di cibo, ma una realtà che si prende cura della comunità locale e contrasta lo spreco alimentare.

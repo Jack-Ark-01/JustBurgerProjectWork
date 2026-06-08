@@ -1,6 +1,7 @@
-
-PIANO DI MARKETING TERRITORIALE & COMMUNITY ENGAGEMENT: "JUST BURGER"
+PIANO DI MARKETING TERRITORIALE & COMMUNITY ENGAGEMENT:"JUST BURGER"
 L'obiettivo di questa strategia è unire l'identità regionale del brand a dinamiche di fidelizzazione digitali (Gamification) e a un forte coinvolgimento della community sui canali social attraverso la flotta itinerante.
+
+
 1. STRATEGIA "PASSAPORTO DIGITALE" (Fidelizzazione & App)
 L'iniziativa punta a trasformare l'assaggio delle edizioni limitate regionali in una vera e propria collezione, incentivando il riacquisto e la curiosità del cliente.
 Meccanica del Programma
@@ -12,15 +13,22 @@ Al raggiungimento di 5 regioni diverse, il cliente completa il passaporto e sblo
 	•	Status "Master Burger": Un badge premium visibile sul profilo dell'app che dà accesso a passaggi prioritari o eventi esclusivi del brand.
 	•	Classifica dei Master Burger: Una sezione pubblica nell'app mostra gli utenti con più tappe collezionate a livello nazionale. I primi tre classificati a fine anno ottengono una Golden Card (es. un mese di burger gratuiti).
 	•	Premio Fisico a scelta: Un burger in omaggio oppure l'accesso al merchandising esclusivo a tema "viaggio" firmato Just Burger (es. tazze termiche, zainetti, powerbank personalizzati).
+
+
 2. STRATEGIA "IL CARRO DEI DESIDERI" (Hype Marketing & Food Truck)
 La gestione del food truck non è solo logistica, ma un evento itinerante guidato direttamente dalle decisioni della community social (Instagram/TikTok).
 Roadmap di Lancio sui Social (Step-by-Step)
-	•	Fase 1: Il Teaser Visivo & I Gemellaggi Gastronomici Si pubblica un contenuto video ad alto impatto (Reel/TikTok) incentrato sulla preparazione del nuovo burger regionale. Il focus è sulla golosità e sulla qualità degli ingredienti, mostrando anche collaborazioni con piccoli produttori locali (es. il caseificio per la stracciatella o il salumificio per la 'nduja), ma senza svelare la ricetta segreta.
-	•	Fase 2: Il Coinvolgimento Attivo (I Sondaggi) Subito dopo il video, la community diventa protagonista tramite le storie interattive.
+	•	Fase 1: Il Teaser Visivo & I Gemellaggi Gastronomici
+Si pubblica un contenuto video ad alto impatto (Reel/TikTok) incentrato sulla preparazione del nuovo burger regionale. Il focus è sulla golosità e sulla qualità degli ingredienti, mostrando anche collaborazioni con piccoli produttori locali (es. il caseificio per la stracciatella o il salumificio per la 'nduja), ma senza svelare la ricetta segreta.
+	•	Fase 2: Il Coinvolgimento Attivo (I Sondaggi)
+Subito dopo il video, la community diventa protagonista tramite le storie interattive.
 	◦	Esempio di Sondaggio: "In quale regione dobbiamo portare questo Burger?" con opzioni di voto per definire la rotta del truck.
-	•	Fase 3: La Tappa "Secret Spot" & L'Ingaggio della Community Prima dell'arrivo nella città vincitrice, si pubblicano indizi misteriosi (dettagli di monumenti, modi di dire in dialetto). Il primo utente che indovina la location esatta nei commenti vince un burger in omaggio.
+	•	Fase 3: La Tappa "Secret Spot" & L'Ingaggio della Community
+Prima dell'arrivo nella città vincitrice, si pubblicano indizi misteriosi (dettagli di monumenti, modi di dire in dialetto). Il primo utente che indovina la location esatta nei commenti vince un burger in omaggio.
 	•	Fase 4: Esperienza sul Posto ("Dialetto Menù" & UGC)
 	◦	Sul Truck: Cartellonistica e interazioni con lo staff utilizzano espressioni tipiche della regione ospitante per integrarsi perfettamente con il territorio.
 	◦	UGC (User Generated Content): Viene lanciato l'hashtag #AvvistatoJustBurger. Chiunque fotografi il camion in viaggio o durante il posizionamento e lo condivida nelle proprie storie riceve un codice sconto immediato da spendere al truck.
+
+
 3. INIZIATIVA ANNUALE: "BURGER CROWDSOURCING"
 Una volta all'anno, la community viene chiamata a creare il proprio panino. I clienti propongono la ricetta della propria terra (es. "Inventa il burger della tua regione"). Le tre proposte migliori vengono votate sui social e la ricetta vincitrice entra ufficialmente nel menù delle Limited Edition per un mese, firmata con il nome del cliente che l'ha ideata.
