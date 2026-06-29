@@ -1,0 +1,101 @@
+servizio delivery MATTIA
+
+Slide 1: Copertina
+
+    Titolo: JUST BURGER – L'Evoluzione del Delivery
+
+    Sottotitolo: Velocità, Trasparenza e Integrazione Digitale
+
+    Visual : Lo screenshot dell'app mobile con la mappa di tracciamento e l'interfaccia scura (Schizzo app).
+
+  ""  Note di Stile: Sfondo scuro (#1A1A1A preso dal desin), testo principale in bianco latte e accenti in rame (#B87333). Font consigliato per il titolo: Montserrat(desin).""
+
+
+Slide 2: La Vision (L'Ispirazione)
+
+
+Titolo: Un'Esperienza d'Ordine Intuitiva
+
+Contenuto:
+
+    Analisi delle migliori pratiche del mercato globale:
+
+        Modello Interfaccia: Pulizia visiva e immediatezza ispirata ai leader del settore come l'app di McDonald's (foto app mc).
+
+        Interazione e Assistenza: Chatbot integrati ed elementi di supporto istantaneo sul modello di Holy Cow! (foto holy cow).
+
+    Obiettivo: Trasformare l'ordine da mobile in un processo rapido e semplice.
+
+
+
+Slide 3: Strategia di Integrazione Multicanale
+
+    Titolo: Ordina Dove Vuoi, Come Vuoi
+
+    Contenuto (P
+
+        Aggregatori Esterni: Presenza strategica sulle principali piattaforme di consegna rapida (Deliveroo, Uber   Eats, Glovo) con tempi stimati di 30-40 minuti (Schizzo app mobile).
+
+        Canale Proprietario Diretto: Incentivazione dell'uso del sito ufficiale e dell'app Just Burger.  
+
+        Incentivo Diretto: Sconto esclusivo del 10% sul primo ordine per chi sceglie di acquistare direttamente dal nostro ecosistema(anche a fine slide schizzo si potrebbe)
+
+
+
+
+Slide 4: Il Flusso dell'Ordine e Tracciamento
+
+    Titolo: Trasparenza in Tempo Reale
+
+    Contenuto:
+
+        Fase 1 – Selezione: Navigazione chiara e visuale (effetto food porn) per la valorizzazione degli ingredienti locali e a Km 0.  (preso da strat mark)
+
+        Fase 2 – Ordine: Interfaccia d'acquisto rapida, accessibile direttamente dai link social (Instagram e Facebook).  (same)
+
+        Fase 3 – Tracking Live: Monitoraggio della consegna con mappa interattiva e tempo di arrivo stimato per ottimizzare la soddisfazione del cliente (Deliveroo app foto)
+
+
+
+
+Slide 5: Vantaggi Competitivi del Nostro Delivery
+
+    Titolo: Perché il Nostro Servizio Conduce il Mercato
+
+    Contenuto (Tabella o Box Comparativi):
+
+Caratteristica	                 Il Nostro Delivery	                           Fast-Food di Massa
+Qualità e Trasparenza||	 Materie prime locali garantite anche a casa.   Logiche di svalutazione e sconti aggressivi. 
+
+	
+
+ 
+Esperienza Utent||  Tracciamento preciso e interfaccia "Dark Mode" rilassante.|Interfacce standardizzate e caotiche.
+
+  
+	
+Sostenibilità	|| Packaging eco e combo anti-spreco.||                   Grande impatto di rifiuti non riciclabili.
+
+  
+	
+Slide 6: Conclusioni e Prossimi Passi
+
+    Titolo: Obiettivi di Crescita
+
+    Contenuto:
+
+        Consolidamento della community mobile attraverso il "Passaporto Digitale".(strat mark)  
+
+        Riduzione delle commissioni esterne spostando il volume degli ordini sui canali proprietari.(strat mark  
+
+        Mantenimento di un posizionamento premium anche nel servizio a domicilio.(desin/strat mark)
+
+
+
+
+
+
+
+
+
+
