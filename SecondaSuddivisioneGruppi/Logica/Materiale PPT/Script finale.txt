@@ -1,0 +1,161 @@
+[Alberto]
+[slide 0]
+Buongiorno a tutti, e grazie per averci dedicato il vostro tempo oggi.
+Vi proponiamo una ora nuova visione per Just Burger, una campagna pubblicitaria innovativa che non solo racconta i vostri valori, ma li trasforma in un’esperienza digitale moderna, autentica, e vincente.
+
+[slide 1]
+Prima di entrare nel dettaglio della nostra proposta, permetteteci di presentarci.
+Siamo un team di sette professionisti appassionati:
+Simone Giagnorio e Mattia Rizzi, che si sono occupati della Logica di Business;
+All'User Experience & UI ci sono Giulia Balaban e Francesco Torre;
+Mentre Giacomo Archetti e Andrea Barbieri per la tecnologia e l’automazione;
+Infine, me, Alberto Camoirano, project lead.
+Insieme, uniamo competenze di design, strategia digitale e sviluppo tecnologico per dar vita a questa nuova esperienza Just Burger.
+
+[slide 2]
+Per sviluppare questo progetto abbiamo seguito uno specifico framework operativo.
+Inizialmente abbiamo fatto una sincronizzazione strategica, nella quale abbiamo allineato i nostri obbiettivi di business, design e sviluppo per garantire una visione condivisa.
+Successivamente abbiamo adottato una esecuzione Agile, con cicli di lavoro brevi e focalizzati.
+Al termine di ogni ciclo abbiamo adottato una validazione iterativa, quindi feedback continui per ottimizzare costantemente i risultati.
+
+Presenta Simone, Concept & Vision
+
+[slide 3]
+[passaggio a Simone]
+Buongiorno, sono Simone Giagnorio e insieme a Mattia Rizzi ho curato l'area sulla logica di business, adesso vi parlerò della visione del progetto.
+
+La vision del progetto è quella di fondere l’autenticità della materia prima a chilometro zero, con l’eleganza di un design digitale moderno, creando non solo un prodotto, ma un ecosistema integrato che trasforma ogni interazione in un’esperienza coinvolgente. Non si tratta più soltanto di offrire hamburger di qualità, ma di costruire un legame emotivo con la clientela, valorizzando la filiera locale e rispondendo alle esigenze di un pubblico attento e consapevole.
+
+[slide 4]
+Per concretizzare questa visione nella nostra applicazione mobile abbiamo preso spunto dai migliori modelli di successo internazionale. Ci siamo concentrati in particolare su due pilastri.
+Da un lato, all'app di McDonald's: che ci ha inspirato per una UX ultraveloce, strutturando un processo d'acquisto che permette di completare l'ordine in soli tre passaggi, arricchito da una fidelizzazione digitale e un forte storytelling artigianale.
+Dall'altro lato, dai giganti del Delivery come Deliveroo, di cui ammiriamo la precisione logistica. Ma qui facciamo la scelta strategica di puntare ad avere dei nostri riders. Questo ci libera dalle commissioni delle piattaforme esterne e ci consente di mantenere il controllo sulla qualità del prodotto.
+
+[slide 5]
+Sul fronte dei social, puntiamo su uno storytelling autentico. Non solo a semplici foto, ma anche a contenuti video verticali e di breve durata dedicati al 'Food Porn' artigianale, al dietro le quinte delle nostre cucine e alla valorizzazione dei nostri produttori locali.
+Questa narrazione si connette organicamente al nostro canale web: prendendo come riferimento il modello di successo di Holy Cow, abbiamo strutturato una piattaforma mobile-first dall'impatto visivo mozzafiato e di estrema semplicità d'uso. Creando così un social loop perfetto: catturiamo l'attenzione dell'utente e lo portiamo a ordinare in pochi secondi sul nostro sito, trasformando i followers in clienti attivi con un percorso fluido e immediato.
+
+
+[slide 6]
+[passaggio a Giacomo]
+Grazie Simone e buongiorno a tutti, sono Giacomo Archetti del team di software e automazione del prodotto, oggi vi parlerò degli obiettivi della campagna.
+
+Le nostre richieste erano una maggiore presenza online, un sito connesso ai social e alle app di messaggistica per ordinazioni semplici e veloci.
+
+Le nostre soluzioni si articolano su 4 punti principali.
+
+La visibilità sui social la otterremo con format video costanti e mirati, e campagne geolocalizzate.
+L'app mobile è stata sviluppata seguendo il modello delle piu grandi industrie alimentari al momento.
+Il sito unisce un'esperienza perfettamente ottimizzata per dispositivi mobili a un UX super semplificata per garantire la connessione istantanea alle principali app di messaggistica.
+E poi c'è quello che chiamiamo il social loop, ovvero un'ecosistema interconnesso dove da un semplice post ti ritroverai ad ordinare il tuo nuovo panino preferito.
+
+[slide 7]	
+Ecco come performeremo online... una strategia basata su video short form, fatti di dietro le quinte, food porn e creazione di autenticità tramite il racconto di noi, dei nostri produttori e delle nostre materie.
+Il cliente diventa immediatamente un fan, ama il prodotto ed ama il brand, vuole essere parte di ciò che sta succedendo.
+Il sistema di vendita si avvale delle più innovative interfacce conversazionali che garantiscono l'ottimizzazione dei touch point con l'utente e un'esperienza d'acquisto rapida e indolore.
+
+
+[slide 8]
+Sarà ora il mio collega Mattia Rizzi che si è occupato della logica di business a parlarvi dell app mobile.
+
+[passaggio a Mattia]
+Il cuore della nostra proposta è l’app mobile, un ecosistema “mobile-first” pensato al fine di garantire ordini rapidi e intuitivi, con un massimo di tre clic, che permettano di completare l’acquisto.
+L’app sarà dotata di notifiche push geolocalizzate e pagamenti one-touch integrati con Apple Pay, Google Pay e i principali metodi digitali.
+Un’esperienza fluida e veloce, che trasforma il delivery in un momento semplice e piacevole, rafforzando la relazione con il consumatore.
+
+[foto]
+
+Inizialmente troviamo il nome del ristorante Just Burger con l’introduzione del brand grazie ad uno slogan d’impatto, facendone capire subito il settore di mercato.
+
+Subito dopo è presente un pulsante per effettuare un ordine e un altro per iscriversi alla newsletter, il quale permette agli utenti di inserire il proprio indirizzo email per ricevere offerte, sconti e informazioni sulle nuove aperture o sui nuovi prodotti, modifiche al
+servizio ed eventi organizzati dal ristorante.
+In questo modo il cliente risulta sempre aggiornato al fine di fidelizzarlo.
+
+Successivamente troviamo una parte dedicata alla storia del ristorante, alla qualità degli ingredienti utilizzati, ai fondatori e ai valori che caratterizzano il locale, evidenziandone il marchio e la sua filosofia.
+
+Infine troviamo la sezione dedicata agli ordini. Qui l’utente può scegliere attraverso quale piattaforma effettuare l’acquisto, oppure Può acquistare direttamente dal sito ufficiale.
+Questa possibilità rende il servizio più comodo perché ogni cliente può utilizzare la piattaforma che preferisce. Inoltre viene evidenziata una promozione che offre uno sconto sul primo ordine effettuato dal sito ufficiale.
+
+In conclusione, questa pagina raccoglie in un unico spazio tutte le informazioni più importanti: permette di conoscere il ristorante Just Burger, restare aggiornati sulle novità, iscriversi alla newsletter e ordinare facilmente attraverso diversi canali.
+
+[ritorna alle slide]
+
+[slide 9]
+L'app mobile è sicuramente il nostro strumento di conversione ma affinché tutto funzioni correttamente, il mio collega e sviluppatore tech Andrea Barbieri vi parlerà del sito
+
+[passaggio ad Andrea]
+Grazie Mattia, sono Andrea Barbieri e mi occupo della parte tecnologica del progetto: insieme a Giacomo abbiamo costruito il sito che sto per mostrarvi.
+
+Parallelamente, il sito web nasce con un design minimale ma di grande impatto visivo, ispirato ai migliori modelli internazionali come Holy Cow: l'obiettivo è ridurre al minimo ogni passaggio superfluo e trasformare i follower social in clienti attivi. È ottimizzato per la navigazione da smartphone, con caricamento istantaneo anche sotto copertura di rete minima — perché per noi la velocità è un valore, non un dettaglio tecnico.
+ 
+Ve lo mostro subito.
+[passa al sito]
+
+Come vedete, l'estetica dark e il rame richiamano subito l'identità del brand — nessun elemento è casuale, ogni colore ha un significato preciso.
+
+[scendi]
+
+Scendendo, trovate i nostri piatti di punta, fotografati per esaltare ogni dettaglio — è la parte "food porn" di cui parlava prima il team.
+
+[scendi]
+
+Questi numeri raccontano chi siamo in breve.
+
+[scendi]
+
+E qui arriviamo al cuore del brand: la nostra filosofia. Nessuna scorciatoia — ogni immagine, ogni parola è pensata per comunicare cura e dedizione, non solo vendere un prodotto.
+
+[scendi]
+
+Chiudiamo la home con una call-to-action chiara: ordina o scopri di più, senza percorsi confusi.
+
+[passa a menu]
+Passiamo al menu: ogni piatto è filtrabile per categoria, pensato per chi decide in pochi secondi da smartphone.
+
+[passa a ristoranti]
+
+Qui trovate i nostri locali, con stato aperto o prossima apertura — trasparenza anche su questo.
+
+[passa a chi siamo]
+
+In Chi Siamo raccontiamo la nostra storia con un video e i volti delle persone dietro al progetto — perché dietro ogni burger c'è comunque un team.
+
+[passa a contatti]
+
+E infine i contatti, con mappa e form diretto — anche qui, zero passaggi superflui.
+Questo è il sito. Ora torniamo a noi e vi lascio a Giulia.
+
+
+[slide 10]
+[passaggio a Giulia]
+Grazie Andrea, per averci guidato attraverso l'essenza di Just Burgers. Spero davvero, di cuore, che questo sito vi sia piaciuto.
+
+Intanto mi presento: io sono Giulia Balaban e, insieme a Francesco Torre, mi occupo di definire l'identità di Just Burgers, ovvero di come vivrete la nostra esperienza, dalla prima interazione fino al momento in cui vi siederete al tavolo. Il nostro impegno quotidiano è far sì che ogni vostro contatto con noi sia semplice, accogliente e vi faccia sentire subito a casa.
+
+Vorrei ora raccontarvi cosa guida la nostra strategia: la sezione 'Promo & Filosofia', che abbiamo voluto chiamare 'Etica e Territorio'. Più che una semplice strategia, è il nostro modo di prenderci cura di voi.
+
+La nostra visione si fonda su due pilastri a cui teniamo profondamente:
+
+Il primo è che, per noi, le persone vengono sempre prima di qualsiasi prodotto. Crediamo nel valore delle relazioni sincere, quelle che si costruiscono con calma e rispetto insieme ai nostri produttori locali. Scegliamo ogni ingrediente pensando non solo alla sua bontà, ma anche alla storia e alla passione che c'è dietro, perché crediamo che la vera qualità nasca dall'attenzione e non dalla fretta di risparmiare.
+
+Il secondo punto è il nostro legame profondo con le radici. Vogliamo che ogni nostro locale sia un piccolo omaggio alla comunità che ci ospita, raccontando la storia e le tradizioni del luogo in cui ci troviamo. Ci piace immaginare ogni nuova apertura come una scoperta, dove le eccellenze del territorio diventano le protagoniste dei nostri piatti, regalandovi esperienze uniche che raccontano dove siamo e chi siamo.
+
+È proprio questo abbraccio profondo con la realtà locale a creare l'autenticità che trasforma un semplice cliente in un fan fedele di Just Burgers.
+
+Ma, come sapete, per trasformare questa visione in realtà, serve un motore solido che faccia funzionare ogni ingranaggio. Per spiegarvi come abbiamo tradotto tecnicamente tutto questo, passo la parola al mio compagno di viaggio, Francesco Torre, che vi accompagnerà nel cuore operativo del nostro lavoro.
+
+[slide 11]
+[passaggio a Francesco]
+Buongiorno a tutti. Sono Francesco Torre e insieme a Giulia curo l'area design, user experience e ui.
+
+Il mio compito sarà spiegarvi perché la nostra offerta integrata si distingue nettamente dai concorrenti tradizionali. come potete vedere, i nostri vantaggi competitivi si articolano su due fronti principali: il primo è una netta differenziazione competitiva, che trasforma ogni punto vendita in un'esperienza a sé grazie alla personalizzazione del menu con le eccellenze locali, pur mantenendo un'identità di brand unica nel suo genere. il secondo è la fidelizzazione del cliente: l'uso di prodotti del territorio genera autenticità, aumenta il valore percepito dal pubblico e crea un legame emotivo profondo con la comunità locale, favorendo un passaparola spontaneo e genuino.  
+
+[slide 12]
+Tutta questa solidità strategica ed etica si traduce concretamente nelle proiezioni di crescita e nei risultati attesi che abbiamo stimato entro i primi 12 mesi dal lancio della nuova piattaforma. come viene mostrato, puntiamo a raggiungere un incremento del +45% negli ordini diretti, con oltre 15.000 download dell'app, un aumento del +30% nella fidelizzazione del cliente e una riduzione netta del -20% sui costi logistici. questa crescita operativa sostenibile sarà possibile soprattutto grazie alla disintermediazione dalle grandi piattaforme di terze parti, come just eat o deliveroo, che ci permetterà di recuperare margini di profitto importanti e aumenterà la frequenza d'acquisto dei clienti tramite i nostri canali social.
+Per le conclusioni finali restituisco la parola al nostro project lead Alberto
+
+[riattiva microfono]
+
+[cambio slide]
+[passaggio ad Alberto]
+E con questo abbiamo finito la nostra presentazione, vi ringraziamo per l'attenzione e siamo aperti alle vostre domande
